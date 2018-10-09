@@ -27,6 +27,98 @@
 <div id="description">Stuff about dev work</div>
 </div></div></div>
 <div id="divbody"><div class="content">
+<h3><a class="ablack" href="blog-with-github-pages-and-a-bash-script.html">
+Blog with GitHub pages and a bash script
+</a></h3>
+<!-- bashblog_timestamp: #201810091613.49# -->
+<div class="subtitle">October 09, 2018 &mdash; 
+Bill Mitchell
+</div>
+<!-- text begin -->
+
+<p>Since I've recently started this blog I thought a good first post would be about how I set it up.</p>
+
+<p>I've been searching for a way to create and host a blog with minimal setup and something that would involve minimal maintenance.</p>
+
+<p>I wanted to avoid having to setup and maintain a server. It's something I can do and currently do but free time is at a minimum lately so if I could avoid that entirely, that would be great.</p>
+
+<p>Also wanted to be able to edit my blog content using Markdown. </p>
+
+<p>Finally, I'd like the blog to have a very basic and simplistic design. </p>
+
+<p>I had seen some tutorials online that showed how you can use GitHub pages to host static content. Some people had been using static content generates like <a href="https://gohugo.io/">Hugo</a> or <a href="https://jekyllrb.com/">Jekyll</a> and then uploading the content to their GitHub pages account. </p>
+
+<p>Tried these options out and they did work but still involved installing the libraries on my local machine which wasn't a huge deal but I felt there could be something easier. I also had a bit of trouble trying to apply different styles to the content and also finding a style that looked good.</p>
+
+<p>Then I stumbled across a blog that looked very minimalistic (wish I could remember what blog it was now) and noticed in the footer it mentioned it was made with <a href="https://github.com/cfenollosa/bashblog">https://github.com/cfenollosa/bashblog</a>.</p>
+
+<p>bashblog is a bash script that generates a static blog site. It fulfilled a few of the things I was looking for:</p>
+
+<ul>
+<li>Minimal setup - bashblog has no dependencies, it's just a bash script</li>
+<li>Simplistic design</li>
+<li>Supports markdown </li>
+</ul>
+
+<p>So it was time to put the two together. Here's the steps I took:</p>
+
+<h2>01 - Setup GitHub pages</h2>
+
+<p>Best guide for this is located at https://pages.github.com/. Once you are done you can go to https://<yourgithubprofile>.github.io and see a "Hello World" you created by following the guide.</p>
+
+<p>But for a quick version:</p>
+
+<ul>
+<li>Create a GitHub repo named <code>username.github.io</code>, where <code>username</code> is your GitHub username.</li>
+<li>Clone the repo to your local machine: <code>git clone https://github.com/username/username.github.io</code></li>
+<li>Enter the folder: <code>cd username.github.io</code></li>
+<li>Create an index.html page: <code>echo "Hello World" &gt; index.html</code></li>
+<li>Commit and push your changes:
+<code>
+git add --all
+git commit -m "Initial commit"
+git push -u origin master
+</code>
+At this point you should see your "Hello World" at <code>https://&lt;yourgithubprofile&gt;.github.io</code>. (If you don't see it right away you may need to refresh a few times.)</li>
+</ul>
+
+<h2>02 - Download bashblog</h2>
+
+<p>Go to the <a href="https://github.com/cfenollosa/bashblog/">bashblog repo</a> and download the <code>bb.sh</code> script to your local machine into the same folder where your index.html is. You could also create a <code>.gitignore</code> file and add <code>bb.sh</code> to it if you don't want to have the script committed with your blog content.</p>
+
+<p>From there you will probably have to make it executable with <code>cmhod +x bb.sh</code></p>
+
+<h2>03 - Configure bashblog</h2>
+
+<p>Type <code>touch .config</code> to create a config file that will hold your settings. First thing I did was setup my default editor by adding:
+<code>
+editor=vim
+</code></p>
+
+<h2>04 - Create your first post</h2>
+
+<p>To create a new post run <code>./bb.sh post</code>. This will open up the editor you defined in your config with the template content of a new blog post.</p>
+
+<p>Replace the <code>Title on this line</code> with your desired blog post title.</p>
+
+<p>Below that you can replace the segment that starts with <code>The rest of the text</code> with the body of your blog post.</p>
+
+<p>At the bottom is a section for tags which you can add as well.</p>
+
+<p>Once finished it will prompt you to post the new content. If you decide to post it you will see that the bashblog script rebuilds the index page, tags and RSS feed. </p>
+
+<h2>05 - Push to GitHub</h2>
+
+<p>From here you can commit and push your new entry to the GitHub repo.</p>
+
+<p>After a minute or so your new content will be live on your GitHub pages URL.</p>
+
+<h1>Conclusion</h1>
+
+<p>Overall I found this a very minimalist way to create and maintain a blog. Some other things I plan to do eventually is add Google Analytics support and obtain a custom domain that points to my GitHub pages account. </p>
+
+<p>Tags: <a href='tag_bashblog.html'>bashblog</a>, <a href='tag_bash.html'>bash</a>, <a href='tag_github.html'>github</a></p>
+<!-- text end -->
 <h3><a class="ablack" href="first-post.html">
 First post
 </a></h3>
