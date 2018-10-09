@@ -2,8 +2,8 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
 <channel><title>bmitch's blog</title><link>https://bmitch.github.io/index.html</link>
 <description>Stuff about dev work</description><language>en</language>
-<lastBuildDate>Mon, 08 Oct 2018 20:00:25 -0700</lastBuildDate>
-<pubDate>Mon, 08 Oct 2018 20:00:25 -0700</pubDate>
+<lastBuildDate>Tue, 09 Oct 2018 15:01:25 -0700</lastBuildDate>
+<pubDate>Tue, 09 Oct 2018 15:01:25 -0700</pubDate>
 <atom:link href="https://bmitch.github.io/feed.rss" rel="self" type="application/rss+xml" />
 <item><title>
 First post
@@ -12,6 +12,7 @@ First post
 <p>This is my first post as a test with the package <a href="https://github.com/cfenollosa/bashblog">bashblog</a></p>
 
 <p>Tags: <a href='tag_first.html'>first</a>, <a href='tag_boring.html'>boring</a></p>
+
 <!-- text end -->
 ]]></description><link>https://bmitch.github.io/first-post.html</link>
 <guid>https://bmitch.github.io/./first-post.html</guid>
