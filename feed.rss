@@ -2,7 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
 <channel><title>bmitch's blog</title><link>https://bmitch.github.io/index.html</link>
 <description>Stuff about dev work</description><language>en</language>
-<lastBuildDate>Mon, 08 Oct 2018 19:42:41 -0700</lastBuildDate>
-<pubDate>Mon, 08 Oct 2018 19:42:41 -0700</pubDate>
+<lastBuildDate>Mon, 08 Oct 2018 19:49:05 -0700</lastBuildDate>
+<pubDate>Mon, 08 Oct 2018 19:49:05 -0700</pubDate>
 <atom:link href="https://bmitch.github.io/feed.rss" rel="self" type="application/rss+xml" />
+<item><title>
+Title on this line
+</title><description><![CDATA[
+
+<p>The rest of the text file is a <strong>Markdown</strong> blog post. The process will continue
+as soon as you exit your editor.</p>
+
+<p>Tags: <a href='tag_keep-this-tag-format.html'>keep-this-tag-format</a>, <a href='tag_tags-are-optional.html'>tags-are-optional</a>, <a href='tag_beware-with-underscores-in-markdown.html'>beware-with-underscores-in-markdown</a>, <a href='tag_example.html'>example</a></p>
+<!-- text end -->
+]]></description><link>https://bmitch.github.io/title-on-this-line.html</link>
+<guid>https://bmitch.github.io/./title-on-this-line.html</guid>
+<dc:creator>Bill Mitchell</dc:creator>
+<pubDate>Mon, 08 Oct 2018 19:48:45 -0700</pubDate></item>
 </channel></rss>
