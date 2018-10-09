@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
-<channel><title>My fancy blog</title><link>http://example.com/blog/index.html</link>
-<description>A blog about turtles and carrots</description><language>en</language>
-<lastBuildDate>Mon, 08 Oct 2018 19:39:32 -0700</lastBuildDate>
-<pubDate>Mon, 08 Oct 2018 19:39:32 -0700</pubDate>
-<atom:link href="http://example.com/blog/feed.rss" rel="self" type="application/rss+xml" />
+<channel><title>bmitch's blog</title><link>https://bmitch.github.io/index.html</link>
+<description>Stuff about dev work</description><language>en</language>
+<lastBuildDate>Mon, 08 Oct 2018 19:42:41 -0700</lastBuildDate>
+<pubDate>Mon, 08 Oct 2018 19:42:41 -0700</pubDate>
+<atom:link href="https://bmitch.github.io/feed.rss" rel="self" type="application/rss+xml" />
 </channel></rss>
